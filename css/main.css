@@ -973,3 +973,34 @@ ol li {
         padding-left: 20px;
     }
 }
+
+/* 添加彩色标题样式 */
+#home-head #home-info .info .wrap h1.rainbow-text {
+    background-image: linear-gradient(
+        to right,
+        #ff6b6b,
+        #4ecdc4,
+        #45b7d1,
+        #96c93d,
+        #e056fd
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow-text 8s linear infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow-text {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400% 0;
+    }
+}
+
+#home-head #home-info .info .wrap h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
