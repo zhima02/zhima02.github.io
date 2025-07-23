@@ -101,17 +101,22 @@
     padding: 25px 0;
 }
 #home-card #card-div .avatar {
-    border: #f1f1f1 solid 3px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    height: 140px;
-    margin: auto;
-    text-align: center;
-    width: 140px;
+    overflow: hidden;         /* 关键：超出部分隐藏，保证圆形 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;           /* 居中 */
+    background: #fff;         /* 可选：防止图片加载慢时有底色 */
 }
 #home-card #card-div .avatar img {
-    border-radius: 50%;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;        /* 关键：等比例裁剪填充 */
+    object-position: center;  /* 关键：居中显示 */
+    display: block;
 }
 #home-card #card-div .avatar:hover img {
     transform: rotate(360deg);
@@ -884,7 +889,7 @@ ol li {
     .article,
     #archives,
     #footer #footer-wrap {
-        width: 900px;
+        width: 1300px;
     }
     .home-posts-wrap-no-card #home-posts {
         margin: auto;

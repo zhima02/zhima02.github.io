@@ -8,8 +8,8 @@ const app = Vue.createApp({
             menuColor: false,
             scrollTop: 0,
             renderers: [],
-            randomQuote: '',
-            quoteAuthor: ''
+            randomQuote: '有风有雨是常态，风雨无阻是心态，风雨兼程是状态',
+            quoteAuthor: '人民日报'
         };
     },
     created() {
@@ -17,7 +17,7 @@ const app = Vue.createApp({
             this.loading = false;
         });
         // 获取随机名句
-        this.fetchRandomQuote();
+        // this.fetchRandomQuote();
     },
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
@@ -25,16 +25,8 @@ const app = Vue.createApp({
     },
     methods: {
         async fetchRandomQuote() {
-            try {
-                const response = await fetch('https://v1.hitokoto.cn/?c=i&c=d&c=k&encode=json');
-                const data = await response.json();
-                this.randomQuote = data.hitokoto;
-                this.quoteAuthor = data.from_who || data.from;
-            } catch (error) {
-                console.error('获取名句失败:', error);
-                this.randomQuote = '生活明朗，万物可爱。';
-                this.quoteAuthor = '佚名';
-            }
+            this.randomQuote = '有风有雨是常态，风雨无阻是心态，风雨兼程是状态';
+            this.quoteAuthor = '人民日报';
         },
         render() {
             for (let i of this.renderers) i();

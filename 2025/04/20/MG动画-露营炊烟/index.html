@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <title>MG动画-露营炊烟 | 陈柳吉就职简历</title>
+    <meta name="author" content="陈柳吉" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/clj.png" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/KaTeX/0.16.9/katex.min.css" />
+<script src="/js/lib/math.js"></script>
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="https://s4.zstatic.net/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="preconnect" href="https://static-argvchs.netlify.app" />
+
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>陈柳吉就职简历</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;主页</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;关于我</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;作品</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;作品分类</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;作品标签</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;陈柳吉就职简历</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">主页</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于我</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品分类</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品标签</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>MG动画-露营炊烟</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/4/20
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                影视
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/MG%E5%8A%A8%E7%94%BB/" style='color: #ffa2c4'>
+                    MG动画
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/DaVinci-Resolve-Studio/" style='color: #03a9f4'>
+                    DaVinci Resolve Studio
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/AE/" style='color: #00a596'>
+                    AE
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/PR/" style='color: #03a9f4'>
+                    PR
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe
+    src="//player.bilibili.com/player.html?isOutside=true&aid=114896750515415&bvid=BV1B9gnzAERh&cid=31210408267&p=1&autoplay=0&muted=0 "
+    scrolling="no"
+    frameborder="no"
+    allowfullscreen="true"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
+
+
+<h3 id="剪辑策略：6秒直达学校心智的「安全-参与感」动效设计"><a href="#剪辑策略：6秒直达学校心智的「安全-参与感」动效设计" class="headerlink" title="剪辑策略：6秒直达学校心智的「安全+参与感」动效设计"></a>剪辑策略：6秒直达学校心智的「安全+参与感」动效设计</h3><p><em>(Creative Rationale: 6-Second Animation for Instant Engagement in School Contexts)</em></p>
+<p>本项目为学校户外实践课程定制的<strong>露营产品MG动画开头</strong>，设计重点在于用<strong>6秒内的视觉瞬爆，精准唤起学校、家长与学生对“安全可靠、趣味参与、轻松组织”的共同需求感知</strong>。该动画为整支露营活动宣传片的开场片段，其策略意义不只是吸睛，更是为学校的活动推广、家校信任建设与装备采购建立“第一印象信任力”。</p>
+<h4 id="设计逻辑背后的传播价值（Why-it-works）"><a href="#设计逻辑背后的传播价值（Why-it-works）" class="headerlink" title="设计逻辑背后的传播价值（Why it works）"></a>设计逻辑背后的传播价值（Why it works）</h4><ol>
+<li><strong>为学校解决核心传播困境：</strong><ul>
+<li>家长不确定露营是否安全？→ 用“动画呈现+校服儿童”视觉桥接安全与信任</li>
+<li>老师担心组织难？→ 用“秒搭建+多场景”的快节奏视觉语言打消“复杂”印象</li>
+<li>学生对活动兴趣不足？→ 用趣味角色+场景变化唤起参与欲</li>
+</ul>
+</li>
+<li><strong>构建秒级信任感，适配校园传播场景：</strong><ul>
+<li>可嵌入<strong>校园公众号、家长群视频、校内投屏&#x2F;电子海报开场</strong>，一眼吸引、秒懂核心、迅速建立期待感</li>
+<li>帮助学校在家校共育语境中快速传达“这场活动既安全又有趣”的正向认知，为学校背书加分</li>
+</ul>
+</li>
+<li><strong>技术手段服务教育沟通目标：</strong><ul>
+<li>所有动画节奏、转场逻辑与音效卡点，均围绕“家长理解快→学生愿意看→老师信得过”三位一体传播设计展开</li>
+<li>不是炫技，而是把控“传播效率”和“信任效率”的视觉语言工程</li>
+</ul>
+</li>
+</ol>
+<h4 id="总结：这不是一段好看的动画，这是一次教育场景下的「6秒传播决策」"><a href="#总结：这不是一段好看的动画，这是一次教育场景下的「6秒传播决策」" class="headerlink" title="总结：这不是一段好看的动画，这是一次教育场景下的「6秒传播决策」"></a>总结：这不是一段好看的动画，这是一次教育场景下的「6秒传播决策」</h4><p>这6秒不是形式感的装饰，而是学校品牌传播与活动动员链路中的<strong>关键突破口</strong>。通过这一动画开头，您不只是在介绍一件露营装备，更是在用<strong>秒级信任感</strong>，帮学校完成一次“家长认可 + 学生感兴趣 + 教师愿执行”的传播闭环。</p>
+
+    </div>
+    
+    
+    <div class="post-nav" style="display: flex; justify-content: space-between; margin: 40px 0 0 0;">
+        
+        <a href="/2025/05/22/%E5%A5%A5%E8%BF%AA%E6%B4%BB%E5%8A%A8%E8%8A%B1%E7%B5%AE/" class="prev-post" style="padding: 10px 20px; background: #e6e6e6; border-radius: 6px; text-decoration: none; color: #333;">上一篇：奥迪活动花絮</a>
+        
+        
+        <a href="/2023/06/22/%E7%89%A9%E7%90%86%E8%AF%BE%E7%A8%8B/" class="next-post" style="padding: 10px 20px; background: #e6e6e6; border-radius: 6px; text-decoration: none; color: #333;">下一篇：物理教学课程</a>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2025 - 2025 陈柳吉就职简历
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;陈柳吉
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
+    </div>
+    <script src="/js/main.js"></script>
+    <script>
+        console.log("Welcome to Argvchs' blog!");
+        if (!window.hasOwnProperty("ontouchstart")) {
+            let html = '<canvas id="fireworks" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 32767"></canvas><script src="https://static-argvchs.netlify.app/js/fireworks.min.js"><\/script>';
+            document.body.append(document.createRange().createContextualFragment(html));
+        }
+    </script>
+    
+    
+
+
+
+
+    
+</body>
+</html>

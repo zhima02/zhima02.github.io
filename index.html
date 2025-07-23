@@ -3,15 +3,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>YoLin</title>
-    <meta name="author" content="YoLin" />
+    <title>陈柳吉就职简历</title>
+    <meta name="author" content="陈柳吉" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" href="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/001.png" />
+    <link rel="icon" href="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/clj.png" />
     <link rel="preconnect" href="https://s4.zstatic.net" />
 <script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -22,6 +22,8 @@
     href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
 />
 <script> const mixins = {}; </script>
+
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
 
 
 <script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -67,7 +69,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>YOLIN</span>
+            <span>陈柳吉就职简历</span>
         </a>
         
         <a href="/">
@@ -77,29 +79,29 @@
         
         <a href="/about">
             <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;关于</span>
+            <span>&ensp;关于我</span>
         </a>
         
         <a href="/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;文章</span>
+            <span>&ensp;作品</span>
         </a>
         
         <a href="/categories">
             <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;文章分类</span>
+            <span>&ensp;作品分类</span>
         </a>
         
         <a href="/tags">
             <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;标签</span>
+            <span>&ensp;作品标签</span>
         </a>
         
     </nav>
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;YOLIN</span>
+            <span>&emsp;陈柳吉就职简历</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -118,7 +120,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-id-card fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">关于我</div>
                     </div>
                 </a>
                 
@@ -127,7 +129,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-box-archive fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">文章</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品</div>
                     </div>
                 </a>
                 
@@ -136,7 +138,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-bookmark fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">文章分类</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品分类</div>
                     </div>
                 </a>
                 
@@ -145,7 +147,7 @@
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
                         </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">标签</div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">作品标签</div>
                     </div>
                 </a>
                 
@@ -159,11 +161,22 @@
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div id="home-head">
-    <div
+    <!-- <div
         id="home-background"
         ref="homeBackground"
-        data-images="https://static-argvchs.netlify.app/images/background.jpg"
-    ></div>
+        data-images="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/a858824589e63e6280718363b8919805.png"
+    ></div> -->
+    <video
+        id="home-background-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;">
+        <source src="/videos/your-bg2.mp4" type="video/mp4">
+        您的浏览器不支持视频播放。
+    </video>
+    <img src="/images/background.jpg" alt="背景图" style="display:none;">
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -171,7 +184,7 @@
         <span class="loop"></span>
         <span class="info">
             <div class="wrap">
-                <h1 class="rainbow-text">YoLin&#39;s Blog</h1>
+                <h1 class="rainbow-text">Employment resume</h1>
                 <h3>{{ randomQuote }}</h3>
                 <h5 v-if="quoteAuthor">—— {{ quoteAuthor }}</h5>
             </div>
@@ -187,17 +200,17 @@
         
 
 <div class="post">
-    <a href="/2025/06/09/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/">
-        <h2 class="post-title">个人信息</h2>
+    <a href="/2025/06/22/%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81/">
+        <h2 class="post-title">亚马逊产品</h2>
     </a>
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                个人简介
+                影视
             </a>
         </span>
         
@@ -205,7 +218,7 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/6/9
+            2025/6/22
         </span>
         
         
@@ -213,7 +226,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>24届软件工程专业学生，<strong>全栈开发</strong>爱好者。独立开发”大事件”文章管理系统，熟悉 <em>Vue3</em> 和 <em>SpringBoot</em> 技术栈。</p>
+            <p>参与制作亚马逊跨境电商产品宣传视频，独立完成后期剪辑与特效设计。采用国际电商视觉风格，注重多维产品展示、动态信息传达与节奏控节，提升产品卖点呈现与海外用户购买转化。熟练掌握多素材编排、字幕动画设计与色彩优化，具备商业项目独立制作能力。</p>
 
             
         </div>
@@ -228,30 +241,40 @@
         
         <span class="tag">
             
-            <a href="/tags/%E7%AE%80%E5%8E%86/" style="color: #00bcd4">简历</a>
+            <a href="/tags/DaVinci-Resolve-Studio/" style="color: #ffa2c4">DaVinci Resolve Studio</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/" style="color: #ffa2c4">项目经验</a>
+            <a href="/tags/AE/" style="color: #00a596">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #ff7d73">PR</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/AU/" style="color: #00bcd4">AU</a>
         </span>
         
     </div>
-    <a href="/2025/06/09/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF/" class="go-post">阅读全文</a>
+    <a href="/2025/06/22/%E4%BA%9A%E9%A9%AC%E9%80%8A%E4%BA%A7%E5%93%81/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
-    <a href="/2025/06/09/%E4%BD%BF%E7%94%A8%20Hexo%20%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">
-        <h2 class="post-title">我的第一篇文章</h2>
+    <a href="/2025/06/22/%E7%9F%B3%E6%A6%B4%E6%B0%B4%E6%9E%9C%E4%BA%A7%E5%93%81%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8A/">
+        <h2 class="post-title">石榴水果产品信息流广告</h2>
     </a>
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                技术笔记
+                影视
             </a>
         </span>
         
@@ -259,7 +282,7 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/6/9
+            2025/6/22
         </span>
         
         
@@ -267,7 +290,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>零基础教你如何使用 <strong>Hexo</strong> 搭建个人博客，包含环境配置、主题安装等完整教程。</p>
+            <p>本作品是一条 20 秒的有机石榴信息流广告，旨在利用极致视觉诱惑与高效信息传递，快速点燃受众对健康鲜果的渴望并促成即时购买。开篇 3 秒以爆汁籽粒特写抢占注意，中段以快节奏镜头和产地&#x2F;认证卖点强化品质信任，结尾通过紧迫感 CTA 直击转化，助力品牌在碎片化信息流中实现“秒级吸粉、瞬间种草”的营销目标。</p>
 
             
         </div>
@@ -282,25 +305,40 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">教程</a>
+            <a href="/tags/DaVinci-Resolve-Studio/" style="color: #ffa2c4">DaVinci Resolve Studio</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/AE/" style="color: #03a9f4">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #ff7d73">PR</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/AU/" style="color: #00a596">AU</a>
         </span>
         
     </div>
-    <a href="/2025/06/09/%E4%BD%BF%E7%94%A8%20Hexo%20%E9%9B%B6%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" class="go-post">阅读全文</a>
+    <a href="/2025/06/22/%E7%9F%B3%E6%A6%B4%E6%B0%B4%E6%9E%9C%E4%BA%A7%E5%93%81%E4%BF%A1%E6%81%AF%E6%B5%81%E5%B9%BF%E5%91%8A/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
-    <a href="/2025/06/09/%E7%BD%91%E9%A1%B5%E9%85%8D%E7%BD%AE/">
-        <h2 class="post-title">网页配置</h2>
+    <a href="/2025/05/22/%E5%A5%A5%E8%BF%AA%E6%B4%BB%E5%8A%A8%E8%8A%B1%E7%B5%AE/">
+        <h2 class="post-title">奥迪活动花絮</h2>
     </a>
     <div class="category-and-date">
         
         <span class="category">
-            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
-                技术笔记
+                影视
             </a>
         </span>
         
@@ -308,7 +346,7 @@
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/6/9
+            2025/5/22
         </span>
         
         
@@ -316,7 +354,7 @@
     <div class="description">
         <div class="content" v-pre>
             
-            <p>详细介绍 <strong>Hexo</strong> 的 <em>ParticleX</em> 主题配置，包含主题安装、基础设置、功能配置等完整说明。</p>
+            <p>本项目为奥迪“稚趣同行”品牌亲子活动花絮视频，围绕“家庭陪伴”主题剪辑制作，突出奥迪品牌的亲和力与温度感。通过自然亲子互动与轻松节奏剪辑，强化“奥迪是家庭伙伴”的品牌印象，助力品牌年轻化与情感营销。</p>
 
             
         </div>
@@ -331,16 +369,218 @@
         
         <span class="tag">
             
-            <a href="/tags/Hexo/" style="color: #00bcd4">Hexo</a>
+            <a href="/tags/DaVinci-Resolve-Studio/" style="color: #03a9f4">DaVinci Resolve Studio</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/ParticleX/" style="color: #00a596">ParticleX</a>
+            <a href="/tags/AE/" style="color: #ff7d73">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #00bcd4">PR</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/AU/" style="color: #ffa2c4">AU</a>
         </span>
         
     </div>
-    <a href="/2025/06/09/%E7%BD%91%E9%A1%B5%E9%85%8D%E7%BD%AE/" class="go-post">阅读全文</a>
+    <a href="/2025/05/22/%E5%A5%A5%E8%BF%AA%E6%B4%BB%E5%8A%A8%E8%8A%B1%E7%B5%AE/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2025/04/20/MG%E5%8A%A8%E7%94%BB-%E9%9C%B2%E8%90%A5%E7%82%8A%E7%83%9F/">
+        <h2 class="post-title">MG动画-露营炊烟</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                影视
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2025/4/20
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>本项目为一支面向学校场景设计的6秒露营产品MG动画开头，用于学生户外实践课程及校园宣传视频。动画通过秒级节奏、趣味视觉与功能直观呈现，快速传达产品的安全性、便捷性与教育适配性。不仅吸引学生、打消家长疑虑，更帮助学校在传播中建立专业可靠的第一印象，是一次融合教学价值与传播效率的视觉策略设计。</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/MG%E5%8A%A8%E7%94%BB/" style="color: #00bcd4">MG动画</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/DaVinci-Resolve-Studio/" style="color: #00a596">DaVinci Resolve Studio</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/AE/" style="color: #ff7d73">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #03a9f4">PR</a>
+        </span>
+        
+    </div>
+    <a href="/2025/04/20/MG%E5%8A%A8%E7%94%BB-%E9%9C%B2%E8%90%A5%E7%82%8A%E7%83%9F/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2023/06/22/%E7%89%A9%E7%90%86%E8%AF%BE%E7%A8%8B/">
+        <h2 class="post-title">物理教学课程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                影视
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/6/22
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>本项目为高中物理网课教学视频，围绕“降低认知门槛，强化科学思维”展开设计。通过结构化剪辑与学科级特效，精准呈现抽象物理概念、动态过程与数学模型，提升学生理解效率与教师教学质量，是一次以教学效能为导向的系统化教学视频工程。</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/AE/" style="color: #03a9f4">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #ff7d73">PR</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/" style="color: #00a596">教学课程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/OFFICE/" style="color: #03a9f4">OFFICE</a>
+        </span>
+        
+    </div>
+    <a href="/2023/06/22/%E7%89%A9%E7%90%86%E8%AF%BE%E7%A8%8B/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
+    <a href="/2022/06/22/%E8%8B%B1%E8%AF%AD%E8%AF%BE%E7%A8%8B/">
+        <h2 class="post-title">英语教学课程</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="category">
+            <a href="/categories/%E5%BD%B1%E8%A7%86/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                影视
+            </a>
+        </span>
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2022/6/22
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <p>本项目为高中英语网课视频制作，涵盖拍摄、剪辑与特效全流程。全程以教学效果最大化为核心，强调“技术赋能教育”，通过精准剪辑与认知型特效，优化知识呈现，降低学习难度，帮助学生听得懂、学得会、记得住，赋能教师高效教学。</p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/AE/" style="color: #03a9f4">AE</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/PR/" style="color: #ff7d73">PR</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/%E6%95%99%E5%AD%A6%E8%AF%BE%E7%A8%8B/" style="color: #ffa2c4">教学课程</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/OFFICE/" style="color: #00bcd4">OFFICE</a>
+        </span>
+        
+    </div>
+    <a href="/2022/06/22/%E8%8B%B1%E8%AF%AD%E8%AF%BE%E7%A8%8B/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -359,48 +599,17 @@
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/001.png" alt="avatar" />
+            <img src="https://web-hmleadnews-yolin.oss-cn-beijing.aliyuncs.com/clj.png" alt="avatar" />
         </div>
-        <div class="name">YoLin</div>
+        <div class="name">陈柳吉</div>
         <div class="description">
-            <p>这是个人卡片</p>
+            <p><strong>电话</strong>:13729317912<br><strong>邮箱</strong>:<a href="mailto:&#x33;&#49;&#54;&#53;&#x33;&#x30;&#50;&#51;&#x35;&#55;&#64;&#113;&#113;&#x2e;&#x63;&#111;&#x6d;">3165302357@qq.com</a></p>
+<ul>
+<li>求职意向:剪辑师岗位</li>
+<li>工作经验:1年6个月</li>
+<li>学校:广东工程职业技术学院</li>
+</ul>
 
-        </div>
-        
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/YoLin02">
-                    <i
-                        class="fa-brands fa-github fa-fw"
-                    ></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a href="/null">
-                    <i
-                        class="fa-brands fa-qq fa-fw"
-                    ></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a href="/null">
-                    <i
-                        class="fa-brands fa-twitter fa-fw"
-                    ></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a href="mailto:mujin122935@gmail.com">
-                    <i
-                        class="fa-solid fa-envelope fa-fw"
-                    ></i>
-                </a>
-            </span>
-            
         </div>
         
         
@@ -417,15 +626,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2025 - 2025 YoLin
+            2025 - 2025 陈柳吉就职简历
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;YoLin
-        </div>
-        <div>
-            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
-            <a target="_blank" rel="noopener" href="https://github.com/YoLin02?tab=repositories">YoLine02</a>
+            &commat;陈柳吉
         </div>
         
     </div>
